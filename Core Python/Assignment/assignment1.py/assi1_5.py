@@ -1,0 +1,15 @@
+#WAP to enter P, T, R and calculate Compound Interest
+
+# Taking input from the user
+P = float(input("Enter the Principal amount: "))
+T = float(input("Enter the Time in years: "))
+R = float(input("Enter the Rate of interest: "))
+
+# Calculating Amount
+A = P * (1 + R/100) ** T
+
+# Calculating Compound Interest
+CI = A - P
+
+print("Compound Interest =", CI)
+print("Total Amount =", A)
